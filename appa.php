@@ -6,5 +6,6 @@
     }
     session_start();
     $a = new aMath($_SESSION['date']);
-    echo "Hello, the date is: [".$a->getDate()."]";
+    echo "Hello, the date is: [".$a->getDate()."]<br>";
+    echo "First three arcs: [".$a->getNumbers()."]<br>";
 
