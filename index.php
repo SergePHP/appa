@@ -1,7 +1,5 @@
 <?php
 
-$a = 1976;
-$b = $a[0];
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     if(!empty($_POST['date'])){
