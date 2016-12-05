@@ -12,7 +12,7 @@
         include_once($filename);
     }
     session_start();
-    $a = new aMath($_SESSION['date']);
+    $a = new arcCalc($_SESSION['date']);
     $lenght = count($a->getDate());
     $count = 0;
     echo "The date is: [";
