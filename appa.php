@@ -13,7 +13,15 @@
     }
     session_start();
     $a = new aMath($_SESSION['date']);
-    echo "Hello, the date is: [".$a->getDate()."]<br>";
+    $lenght = count($a->getDate());
+    $count = 0;
+    echo "The date is: [";
+    foreach ($a->getDate() as $value){
+        $count++;
+        if ($count == $lenght) {echo $value;}
+        else echo $value."/";
+    }
+    echo "]<br>";
     echo "Arcs are following: \n";
     echo "<table border=\"1\" cellspacing=\"0\">\n"
             . "<th>Arcs</th><th>Value</th>";
